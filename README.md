@@ -1,0 +1,3 @@
+# Решение СЛАУ методом Гаусса
+
+(ссылка с методичкой)[chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://psv4.userapi.com/c235131/u477174658/docs/d21/5972f5eb0309/Metod_gaussa_teoria_i_algoritm.pdf?extra=_VdRMSOn_FUhBMnv8x4cKF6XZcCSt3hdOT32ikF3aRBBjtAGVXfQoNP6DEKdeDXQfAINK4SJU-sZSXn364I4tKJJxh7y_SBU2VRz-1nlyjV_arOJfjEzqViBDHDk75oOcOm-bjC7wPlqjyU]
