@@ -43,9 +43,9 @@ int main(int argc, char const *argv[])
     } while (k < n - 1);
 
     cout << "A1\tA2\tA3\t|\tB" << endl;
-    for (size_t i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (size_t j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             cout << A[i][j] << '\t';
         }
@@ -54,31 +54,29 @@ int main(int argc, char const *argv[])
 
     // обратная подстановка
 
-    // int X[n] {};
+    double X[n] {};
+    double S {};
 
-    // X[n-1] = B[n-1] / A[n-1][n-1];
-    // i = n - 2;
-    // do
-    // {
-    //     j = i + 1;
-    //     double S {0};
-
-    // } while (/* condition */);
-    
-    
-    cout << "A1\tA2\tA3\t|\tB" << endl;
-    for (size_t i = 0; i < n; i++)
+    X[n-1] = B[n-1] / A[n-1][n-1];
+    i = n - 2;
+    do
     {
-        for (size_t j = 0; j < n; j++)
+        j = i + 1;
+        S = 0;
+        do
         {
-            cout << A[i][j] << '\t';
-        }
-        cout << "|\t" << B[i] << endl;
-    }
+            S += A[i][j] * X[j];
+            j++;
+        } while (j < n);
+        X[i] = (B[i] - S) / A[i][i];
+        i--;
+    } while (i >= 0);
+
     cout << endl << "X:" << endl;
     for (size_t i = 0; i < n; i++)
     {
         cout << X[i] << '\t';
+        
     }
     cout << endl;
     
